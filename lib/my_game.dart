@@ -5,6 +5,8 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 
+import 'ground.dart';
+
 class MyGame extends FlameGame with TapCallbacks {
   late Player myPlayer;
 
@@ -21,6 +23,7 @@ class MyGame extends FlameGame with TapCallbacks {
 
   @override
   void onMount() {
+    world.add(Ground(position: Vector2(0, 400)));
     world.add(myPlayer = Player());
     super.onMount();
   }
