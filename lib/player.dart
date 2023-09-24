@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 
 class Player extends PositionComponent with HasGameRef<MyGame> {
   Player({
+    required super.position,
     this.playerRadius = 15,
   });
 
@@ -16,7 +17,6 @@ class Player extends PositionComponent with HasGameRef<MyGame> {
 
   @override
   void onMount() {
-    position = Vector2.zero();
     size = Vector2.all(playerRadius * 2);
     anchor = Anchor.center;
     super.onMount();
