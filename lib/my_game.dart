@@ -34,9 +34,7 @@ class MyGame extends FlameGame with TapCallbacks, HasCollisionDetection {
 
   @override
   void onMount() {
-    world.add(Ground(position: Vector2(0, 400)));
-    world.add(myPlayer = Player(position: Vector2(0, 250)));
-    generateGameComponents();
+    _initializeGame();
     super.onMount();
   }
 
@@ -57,7 +55,14 @@ class MyGame extends FlameGame with TapCallbacks, HasCollisionDetection {
     super.onTapDown(event);
   }
 
-  void generateGameComponents() {
+  void _initializeGame() {
+    world.add(Ground(position: Vector2(0, 400)));
+    world.add(myPlayer = Player(position: Vector2(0, 250)));
+    camera.moveTo(Vector2(0, 0));
+    _generateGameComponents();
+  }
+
+  void _generateGameComponents() {
     world.add(ColorSwitcher(position: Vector2(0, 180)));
     world.add(CircleRotator(
       position: Vector2(0, 0),
@@ -70,5 +75,12 @@ class MyGame extends FlameGame with TapCallbacks, HasCollisionDetection {
       position: Vector2(0, -400),
       size: Vector2(150, 150),
     ));
+  }
+
+  void gameOver() {
+    for (var element in world.children) {
+      element.removeFromParent();
+    }
+    _initializeGame();
   }
 }

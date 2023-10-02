@@ -78,7 +78,7 @@ class Player extends PositionComponent
       _changeColorRandomly();
     } else if (other is CircleArc) {
       if (_color != other.color) {
-        /// game over logic
+        gameRef.gameOver();
       }
     }
   }
