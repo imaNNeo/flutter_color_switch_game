@@ -7,9 +7,10 @@ import 'package:flame/game.dart';
 import 'package:flutter/material.dart';
 
 import 'circle_rotator.dart';
+import 'color_switcher.dart';
 import 'ground.dart';
 
-class MyGame extends FlameGame with TapCallbacks {
+class MyGame extends FlameGame with TapCallbacks, HasCollisionDetection {
   late Player myPlayer;
 
   final List<Color> gameColors;
@@ -19,7 +20,7 @@ class MyGame extends FlameGame with TapCallbacks {
       Colors.redAccent,
       Colors.greenAccent,
       Colors.blueAccent,
-      Colors.yellowAccent
+      Colors.yellowAccent,
     ],
   }) : super(
           camera: CameraComponent.withFixedResolution(
@@ -57,9 +58,17 @@ class MyGame extends FlameGame with TapCallbacks {
   }
 
   void generateGameComponents() {
+    world.add(ColorSwitcher(position: Vector2(0, 180)));
     world.add(CircleRotator(
-      position: Vector2(0, 100),
+      position: Vector2(0, 0),
       size: Vector2(200, 200),
+    ));
+
+
+    world.add(ColorSwitcher(position: Vector2(0, -200)));
+    world.add(CircleRotator(
+      position: Vector2(0, -400),
+      size: Vector2(150, 150),
     ));
   }
 }
