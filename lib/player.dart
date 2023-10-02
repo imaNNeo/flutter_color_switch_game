@@ -6,6 +6,8 @@ import 'package:flame/components.dart';
 import 'package:flame/extensions.dart';
 import 'package:flutter/material.dart';
 
+import 'circle_rotator.dart';
+
 class Player extends PositionComponent
     with HasGameRef<MyGame>, CollisionCallbacks {
   Player({
@@ -74,6 +76,10 @@ class Player extends PositionComponent
       // Handle the color change logic
       other.removeFromParent();
       _changeColorRandomly();
+    } else if (other is CircleArc) {
+      if (_color != other.color) {
+        /// game over logic
+      }
     }
   }
 
