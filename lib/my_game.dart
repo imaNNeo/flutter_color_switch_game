@@ -10,12 +10,15 @@ import 'package:flutter/material.dart';
 import 'circle_rotator.dart';
 import 'color_switcher.dart';
 import 'ground.dart';
+import 'star_component.dart';
 
 class MyGame extends FlameGame
     with TapCallbacks, HasCollisionDetection, HasDecorator, HasTimeScale {
   late Player myPlayer;
 
   final List<Color> gameColors;
+
+  final ValueNotifier<int> currentScore = ValueNotifier(0);
 
   MyGame({
     this.gameColors = const [
@@ -64,6 +67,7 @@ class MyGame extends FlameGame
   }
 
   void _initializeGame() {
+    currentScore.value = 0;
     world.add(Ground(position: Vector2(0, 400)));
     world.add(myPlayer = Player(position: Vector2(0, 250)));
     camera.moveTo(Vector2(0, 0));
@@ -76,11 +80,21 @@ class MyGame extends FlameGame
       position: Vector2(0, 0),
       size: Vector2(200, 200),
     ));
+    world.add(StarComponent(
+      position: Vector2(0, 0),
+    ));
 
     world.add(ColorSwitcher(position: Vector2(0, -200)));
     world.add(CircleRotator(
       position: Vector2(0, -400),
       size: Vector2(150, 150),
+    ));
+    world.add(CircleRotator(
+      position: Vector2(0, -400),
+      size: Vector2(180, 180),
+    ));
+    world.add(StarComponent(
+      position: Vector2(0, -400),
     ));
   }
 
@@ -103,5 +117,9 @@ class MyGame extends FlameGame
   void resumeGame() {
     (decorator as PaintDecorator).addBlur(0);
     timeScale = 1.0;
+  }
+
+  void increaseScore() {
+    currentScore.value++;
   }
 }
