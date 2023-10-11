@@ -6,4 +6,4 @@ You can [find this tutorial here in my YouTube channel](https://www.youtube.com/
 
 ## Episodes:
 * [0: Overview and Introduction](https://youtu.be/ubyoQGPnmmw?si=EC-6fEfQiTSzcF-9)
-* [1: Components & Event handling](https://youtu.be/eiZDbUBesqE?si=PiwPwhCnVzjIMrs4)
+* [1: Components & Event handling](https://youtu.be/eiZDbUBesqE?si=PiwPwhCnVzjIMrs4), [source-code (episode-1 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-1)
