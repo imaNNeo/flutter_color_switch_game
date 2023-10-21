@@ -74,7 +74,7 @@ class MyGame extends FlameGame
     world.add(myPlayer = Player(position: Vector2(0, 250)));
     camera.moveTo(Vector2(0, 0));
     _generateGameComponents();
-    FlameAudio.bgm.play('background.mp3');
+    // FlameAudio.bgm.play('background.mp3');
   }
 
   void _generateGameComponents() {
@@ -99,6 +99,31 @@ class MyGame extends FlameGame
     world.add(StarComponent(
       position: Vector2(0, -400),
     ));
+
+    world.add(ColorSwitcher(position: Vector2(0, -580)));
+
+    world.add(CircleRotator(
+      position: Vector2(0, -750),
+      size: Vector2(180, 180),
+    ));
+    world.add(StarComponent(
+      position: Vector2(0, -750),
+    ));
+
+    world.add(ColorSwitcher(position: Vector2(0, -950)));
+
+    world.add(CircleRotator(
+      position: Vector2(0, -1150),
+      size: Vector2(180, 180),
+    ));
+    world.add(CircleRotator(
+      position: Vector2(0, -1150),
+      size: Vector2(210, 210),
+    ));
+    world.add(StarComponent(
+      position: Vector2(0, -1150),
+    ));
+
   }
 
   void gameOver() {
