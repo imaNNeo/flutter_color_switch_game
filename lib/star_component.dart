@@ -3,11 +3,12 @@ import 'dart:math';
 import 'package:flame/collisions.dart';
 import 'package:flame/components.dart';
 import 'package:flame/particles.dart';
-import 'package:flame/rendering.dart';
 import 'package:flutter/material.dart';
 
 class StarComponent extends PositionComponent {
   late Sprite _starSprite;
+
+  final _particlesPaint = Paint();
 
   StarComponent({
     required super.position,
@@ -58,7 +59,7 @@ class StarComponent extends PositionComponent {
                       canvas,
                       size: size * (1 - particle.progress),
                       anchor: Anchor.center,
-                      overridePaint: Paint()
+                      overridePaint: _particlesPaint
                         ..color = Colors.white.withOpacity(
                           1 - particle.progress,
                         ),

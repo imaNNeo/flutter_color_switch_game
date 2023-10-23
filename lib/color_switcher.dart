@@ -15,6 +15,7 @@ class ColorSwitcher extends PositionComponent with HasGameRef<MyGame>, Collision
         );
 
   final double radius;
+  final _paint = Paint();
 
   @override
   void onLoad() {
@@ -37,7 +38,7 @@ class ColorSwitcher extends PositionComponent with HasGameRef<MyGame>, Collision
         i * sweepAngle,
         sweepAngle,
         true,
-        Paint()..color = gameRef.gameColors[i],
+        _paint..color = gameRef.gameColors[i],
       );
     }
   }
