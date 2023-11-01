@@ -9,4 +9,4 @@ You can [find this tutorial here in my YouTube channel](https://www.youtube.com/
 * [Episode 01: Components & Event handling](https://youtu.be/eiZDbUBesqE), [source-code (episode-1 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-1)
 * [Episode 02: Camera and World components](https://youtu.be/nyUayMgZqDg), [source-code (episode-2 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-2)
 * [Episode 03: Sprite & Custom Components](https://youtu.be/Xb5ySgetpmU), [source-code (episode-3 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-3)
-* [Episode 04: Sprite & Custom Components](https://youtu.be/w6hEuWPnXQc), [source-code (episode-4 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-4)
+* [Episode 04: Collision detection](https://youtu.be/w6hEuWPnXQc), [source-code (episode-4 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-4)
