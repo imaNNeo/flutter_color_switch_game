@@ -12,3 +12,4 @@ You can [find this tutorial here in my YouTube channel](https://www.youtube.com/
 * [Episode 04: Collision detection](https://youtu.be/w6hEuWPnXQc), [source-code (episode-4 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-4)
 * [Episode 05: Pause menu, Decorators and Overlays](https://youtu.be/ISSty1nQ-uQ), [source-code (episode-5 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-5)
 * [Episode 06: Scoring and Flame Engine Particles ✨](https://youtu.be/QAk4YyNcvrA), [source-code (episode-6 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-6)
+* [Episode 07: Flame Audio and Sound Effects 🔊](https://youtu.be/uqkX_npgOWA), [source-code (episode-7 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-7)

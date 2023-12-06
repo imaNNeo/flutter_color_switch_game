@@ -35,29 +35,31 @@ class _HomePageState extends State<HomePage> {
           if (_myGame.isGamePlaying)
             Align(
               alignment: Alignment.topLeft,
-              child: Row(
-                children: [
-                  IconButton(
-                    onPressed: () {
-                      setState(() {
-                        _myGame.pauseGame();
-                      });
-                    },
-                    icon: const Icon(Icons.pause),
-                  ),
-                  ValueListenableBuilder(
-                    valueListenable: _myGame.currentScore,
-                    builder: (context, int value, child) {
-                      return Text(
-                        value.toString(),
-                        style: const TextStyle(
-                          fontSize: 24,
-                          fontWeight: FontWeight.bold,
-                        ),
-                      );
-                    },
-                  ),
-                ],
+              child: SafeArea(
+                child: Row(
+                  children: [
+                    IconButton(
+                      onPressed: () {
+                        setState(() {
+                          _myGame.pauseGame();
+                        });
+                      },
+                      icon: const Icon(Icons.pause),
+                    ),
+                    ValueListenableBuilder(
+                      valueListenable: _myGame.currentScore,
+                      builder: (context, int value, child) {
+                        return Text(
+                          value.toString(),
+                          style: const TextStyle(
+                            fontSize: 24,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        );
+                      },
+                    ),
+                  ],
+                ),
               ),
             ),
           if (_myGame.isGamePaused)

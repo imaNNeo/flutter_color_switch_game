@@ -5,6 +5,7 @@ import 'package:flame/components.dart';
 import 'package:flame/events.dart';
 import 'package:flame/game.dart';
 import 'package:flame/rendering.dart';
+import 'package:flame_audio/flame_audio.dart';
 import 'package:flutter/material.dart';
 
 import 'circle_rotator.dart';
@@ -40,6 +41,7 @@ class MyGame extends FlameGame
   @override
   void onLoad() {
     decorator = PaintDecorator.blur(0);
+    FlameAudio.bgm.initialize();
     super.onLoad();
   }
 
@@ -72,6 +74,7 @@ class MyGame extends FlameGame
     world.add(myPlayer = Player(position: Vector2(0, 250)));
     camera.moveTo(Vector2(0, 0));
     _generateGameComponents();
+    FlameAudio.bgm.play('background.mp3');
   }
 
   void _generateGameComponents() {
@@ -99,6 +102,7 @@ class MyGame extends FlameGame
   }
 
   void gameOver() {
+    FlameAudio.bgm.stop();
     for (var element in world.children) {
       element.removeFromParent();
     }
@@ -112,11 +116,13 @@ class MyGame extends FlameGame
   void pauseGame() {
     (decorator as PaintDecorator).addBlur(10);
     timeScale = 0.0;
+    FlameAudio.bgm.pause();
   }
 
   void resumeGame() {
     (decorator as PaintDecorator).addBlur(0);
     timeScale = 1.0;
+    FlameAudio.bgm.resume();
   }
 
   void increaseScore() {
