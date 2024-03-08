@@ -14,3 +14,4 @@ You can [find this tutorial here in my YouTube channel](https://www.youtube.com/
 * [Episode 06: Scoring and Flame Engine Particles ✨](https://youtu.be/QAk4YyNcvrA), [source-code (episode-6 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-6)
 * [Episode 07: Flame Audio and Sound Effects 🔊](https://youtu.be/uqkX_npgOWA), [source-code (episode-7 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-7)
 * [Episode 08 - Final: 🌟Polishing and Optimizing🌟](https://youtu.be/dxCTIaveunY), [source-code (episode-8 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-8)
+* [Episode 09 - Spin-off: Infinite game](https://youtu.be/QLDDg_lGXqMY), [source-code (episode-9 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-9)
