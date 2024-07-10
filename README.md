@@ -9,11 +9,6 @@ can [find this tutorial here in my YouTube channel](https://www.youtube.com/play
 
 ## Episodes:
 
-* [Episode 08 - Final: 🌟Polishing and Optimizing🌟](), [source-code (episode-8 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-8)
-* [Episode 09 - Spin-off: Infinite game](), [source-code (episode-9 branch)](https://github.com/imaNNeo/flutter_color_switch_game/tree/episode-9)
-
-## Episodes:
-
 | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part0.png" width=600>](https://youtu.be/ubyoQGPnmmw) | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part1.png" width=600>](https://youtu.be/eiZDbUBesqE) | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part2.png" width=600>](https://youtu.be/nyUayMgZqDg) |
 |-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
 | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part3.png" width=600>](https://youtu.be/Xb5ySgetpmU) | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part4.png" width=600>](https://youtu.be/w6hEuWPnXQc) | [<img src="https://github.com/imaNNeo/flutter_color_switch_game/blob/main/repo_files/part5.png" width=600>](https://youtu.be/ISSty1nQ-uQ) |
